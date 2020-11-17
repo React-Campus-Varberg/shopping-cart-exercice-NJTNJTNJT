@@ -1,0 +1,8 @@
+
+
+/* Header component  */
+.header-component{
+    background-color: palegoldenrod;
+    display: flex;
+    justify-content: space-between;
+}
