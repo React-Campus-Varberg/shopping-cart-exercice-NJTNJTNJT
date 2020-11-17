@@ -1,14 +1,11 @@
 import React from 'react';
 
-/**
- * The cart
- * @param {current cart state} props 
- */
+//the cart
 function Cart(props) {
-    let cartLength = props.stateCartLength;
+    let cartCount = props.stateCartLength;
     return (
       <section>
-        Total item in cart: {cartLength}
+        Total item in cart: {cartCount}
       </section>
     )
 }
