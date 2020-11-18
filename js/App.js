@@ -25,10 +25,10 @@ class App extends React.Component {
 
     render() {
       var books = [
-        {name: 'Harry Potter and the prisoner of Azkaban', price: 20},
-        {name: 'American Psycho', price: 25},
-        {name: '1984', price: 20},
-        {name: 'The Picture of Dorian Gray', price: 20},
+        {name: 'Harry Potter and the prisoner of Azkaban', author: "J.K. Rowling", price: 20},
+        {name: 'American Psycho', author: "unknown", price: 25},
+        {name: '1984', author: "George Orwell", price: 20},
+        {name: 'The Picture of Dorian Gray', author: "Oscar Wilde", price: 20},
 
       ];
       return (
@@ -36,10 +36,10 @@ class App extends React.Component {
             <h1>Cart</h1>
             <Cart stateCartLength={this.state.cartBooks.length}/>
             <hr></hr>
-            <Product name={books[0].name} updateStateCart={this.addCart}/>
-            <Product name={books[1].name} updateStateCart={this.addCart}/>   
-            <Product name={books[2].name} updateStateCart={this.addCart}/>            
-            <Product name={books[3].name} updateStateCart={this.addCart}/>            
+            <Product name={books[0].name} updateStateCart={this.addCart} author={books[0].author}/>
+            <Product name={books[1].name} updateStateCart={this.addCart} author={books[1].author}/>   
+            <Product name={books[2].name} updateStateCart={this.addCart} author={books[2].author}/>            
+            <Product name={books[3].name} updateStateCart={this.addCart} author={books[3].author}/>            
           </div>
         )
     }
